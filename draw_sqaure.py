@@ -34,7 +34,7 @@ while(start == "start"):
     brad = turtle.Turtle()
     brad.shape("turtle")
     brad.color("blue")
-    brad.speed(5)
+    brad.speed(10)
     
     adam =turtle.Turtle()
     adam.speed(10)
