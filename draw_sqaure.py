@@ -1,13 +1,9 @@
 import turtle
+import time
+
+
 
 def draw_square():
-    window = turtle.Screen()
-    window.bgcolor("red")
-
-    brad = turtle.Turtle()
-    brad.shape("turtle")
-    brad.color("blue")
-    brad.speed(5)
     count = 0
     square = 4
     while count <= square:
@@ -15,25 +11,43 @@ def draw_square():
         brad.forward(100)
         count = count +1
 
-    adam =turtle.Turtle()
-    adam.speed(10)
-    adam.shape("arrow")
+    
+def draw_circle():
     adam.forward(100)
     adam.circle(100)
 
-    angie =turtle.Turtle()
-    angie.speed(10)
-    angie.shape("arrow")
-    angie.color("white")
+def draw_triangle():
     count = 0
     triangle = 3
-    
+
     while count < triangle:
         angie.speed(10)
         angie.forward(200)
         angie.right(240)
         count += 1
 
+start = "start"
+while(start == "start"):
+    window = turtle.Screen()
+    window.bgcolor("red")
+
+    brad = turtle.Turtle()
+    brad.shape("turtle")
+    brad.color("blue")
+    brad.speed(5)
+    
+    adam =turtle.Turtle()
+    adam.speed(10)
+    adam.shape("arrow")
+
+    angie =turtle.Turtle()
+    angie.speed(10)
+    angie.shape("arrow")
+    angie.color("white")
+
+    time.sleep(1)
+    draw_square()
+    draw_circle()
+    draw_triangle()
     window.exitonclick()
 
-draw_square()
